@@ -45,8 +45,11 @@ function tahnoutJmeno() {
     console.log(jmena.length);
 
     // Výherní jméno si uložíme do pole k ostatním výherním
-    
+    tazenaJmena.push(vyherniJmeno);
 
     let vyherce = document.querySelector('#vyherka');
     vyherce.innerHTML = vyherniJmeno;
+
+    let seznamJmen = document.querySelector('#seznam')
+    seznamJmen.innerHTML = tazenaJmena;
 }
